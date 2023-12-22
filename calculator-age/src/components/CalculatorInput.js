@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import './../styles/Input.css';
 
-const CalculatorInput = ({type}) => {
+const CalculatorInput = ({type, onChange}) => {
 
     const [inputValue, setInputValue] = useState(""); 
     const [isValid, setValid] = useState(true);
 
     const handleInputChange = (event) => {
+        console.log("change input", event.target.value);
         const value = event.target.value;
         let isValidInput = true;
 
@@ -23,6 +24,7 @@ const CalculatorInput = ({type}) => {
         }
 
         setValid(isValidInput);
+        onChange(value);
     }
 
     return (
@@ -33,8 +35,8 @@ const CalculatorInput = ({type}) => {
             <input
                 type="number"
                 className={`input ${isValid ? "" : "invalid"}`}
-                value={inputValue}
-                onChange={handleInputChange}>
+                defaultValue={inputValue}
+                onKeyDown={handleInputChange}>
             </input>
 
             {
