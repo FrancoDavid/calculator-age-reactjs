@@ -7,15 +7,15 @@ const CalculatorForm = () => {
     return (
         <aside className="form-container">
            <CalculatorInput
-                label="DAY">
+                type="day">
             </CalculatorInput>
 
            <CalculatorInput
-                label="MONTH">
+                type="month">
            </CalculatorInput>
            
            <CalculatorInput
-                label="YEAR">
+                type="year">
            </CalculatorInput>
         </aside>
     )

@@ -12,8 +12,8 @@ hr {
 .display--icon {
     position: absolute;
 
-    top: calc(35% - 10px);
-    left: calc(50% - 39px);
+    top: calc(35% - 40px);
+    left: calc(50% - 40px);
     display: block;
 
     border-radius: 100%;

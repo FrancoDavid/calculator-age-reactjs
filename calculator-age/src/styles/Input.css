@@ -24,6 +24,7 @@ label {
     text-align: left;
     font-size: 1.3rem;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 small {
@@ -31,4 +32,8 @@ small {
     text-align: left;
     font-size: 1rem;
     font-weight: 200;
+}
+
+.invalid {
+    border: 1px solid red;
 }
