@@ -5,10 +5,18 @@ import './../styles/Form.css';
 
 const CalculatorForm = () => {
     return (
-        <aside>
-           <CalculatorInput></CalculatorInput>
-           <CalculatorInput></CalculatorInput>
-           <CalculatorInput></CalculatorInput>
+        <aside className="form-container">
+           <CalculatorInput
+                label="DAY">
+            </CalculatorInput>
+
+           <CalculatorInput
+                label="MONTH">
+           </CalculatorInput>
+           
+           <CalculatorInput
+                label="YEAR">
+           </CalculatorInput>
         </aside>
     )
 }

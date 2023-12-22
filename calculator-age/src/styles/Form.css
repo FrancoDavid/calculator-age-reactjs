@@ -1,7 +1,8 @@
-aside {
+.form-container {
     display: flex;
     justify-content: center;
     
     padding: 10px;
+    margin-bottom: 40px;
 }
 
