@@ -10,24 +10,19 @@ const CalculatorForm = ({onChange}) => {
 
     const handleInputDayChange = (event) => {
         setDay(event);
-        handleOnChange();
+        handleOnChange({day: event, month, year});
     }
     const handleInputMonthChange = (event) => {
         setMonth(event);
-        handleOnChange();
+        handleOnChange({day, month: event, year});
     }
     const handleInputYearChange = (event) => {
         setYear(event);
-        handleOnChange();
+        handleOnChange({day, month, year: event});
     }
 
-    const handleOnChange = () => {
-        console.log('calculate form return values to main');
-        onChange({
-            day,
-            month,
-            year
-        });
+    const handleOnChange = (values) => {
+        onChange(values);
     }
 
 

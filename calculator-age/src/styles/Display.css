@@ -12,7 +12,7 @@ hr {
 .display--icon {
     position: absolute;
 
-    top: calc(35% - 40px);
+    top: calc(36% - 40px);
     left: calc(50% - 40px);
     display: block;
 
@@ -30,7 +30,7 @@ hr {
 
 .display--paragraph {
     display: block;
-    font-size: 5rem;
+    font-size: 4.2rem;
 }
 
 .display--paragraph__number {
@@ -50,9 +50,10 @@ hr {
 }
 @media screen and (min-width: 1024px) {
     .display--paragraph {
-        font-size: 10rem;
+        font-size: 9rem;
     }
     .display--icon {
-        left: calc(65% - 39px);
+        left: calc(60% - 39px);
+        top: calc(33% - 40px);
     }
 }
