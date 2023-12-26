@@ -5,7 +5,8 @@ const CalculatorInput = ({type, onChange}) => {
 
     const [inputValue, setInputValue] = useState(""); 
     const [isValid, setValid] = useState(true);
-
+    
+    
     const handleInputChange = (event) => {
         console.log("change input", event.target.value);
         const value = event.target.value;
@@ -38,15 +39,15 @@ const CalculatorInput = ({type, onChange}) => {
                 defaultValue={inputValue}
                 onKeyDown={handleInputChange}>
             </input>
-
-            {
-                !isValid && (
-                    <small>
-                        Must be a valid {type}
-                    </small>
-                )
-            }
-            
+            <div className="content-error">
+                {
+                    !isValid && (
+                        <small>
+                            Must be a valid {type}
+                        </small>
+                    )
+                }
+            </div>
         </div>
     ) 
 }
